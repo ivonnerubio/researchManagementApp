@@ -36,5 +36,30 @@ export class AppComponent implements OnInit{
   title = 'researchManagementApp';
 
   public paper: Paper[] = [];
+
+  public onOpenModal(paper: Paper, mode: string): void{
+    const container = document.getElementById('main-container');
+    const button = document.createElement('button');
+    button.type = 'button';
+    button.style.display = 'none';
+    button.setAttribute('data-toggle', 'modal');
+    if(mode === 'add'){
+      button.setAttribute('data-target', '#addEmployeeModal');
+    }
+    // if(mode === 'edit'){
+    //   this.editEmployee = employee;
+    //   button.setAttribute('data-target', '#updateEmployeeModal');
+    // }
+    // if(mode === 'delete'){
+    //   this.deleteEmployee = employee;
+    //   button.setAttribute('data-target', '#deleteEmployeeModal');
+    // }
+    container?.appendChild(button);
+    button.click();
+
+  }
+  
   
 }
+
+
