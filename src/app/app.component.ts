@@ -11,8 +11,27 @@ import { PaperService } from './paper.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit{
+  public papers: Paper[] = [];
+
+  constructor(private paperService :PaperService){
+
+  }
+
+
   ngOnInit(): void {
+    this.getPapers();
       
+  }
+
+  public getPapers(): void{
+      this.paperService.getPapers().subscribe(
+        (response: Paper[]) =>{
+          this.papers = response;
+        },
+        (error: HttpErrorResponse) =>{
+          alert(error.message);
+        }
+        )
   }
   title = 'researchManagementApp';
 

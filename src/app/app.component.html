@@ -3,41 +3,44 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 
-
-
-
+<h1>hi</h1>
+<img src="/Users/ivonne/Documents/GitHub/researchManagementApp/src/assets/Starlight.png" alt="Girl in a jacket" width="500" height="600"> 
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
 <div id="wrapper" class="wrapper-content">
     <div id="sidebar-wrapper">
         <ul class="sidebar-nav">
             <li class="sidebar-brand">
                 <a href="#">
-                    Bootdey.com
+                   
                 </a>
             </li>
             <li>
-                <a href="#">Dashboard</a>
+                <a href="#">All References</a>
             </li>
             <li>
-                <a href="#">Shortcuts</a>
+              <a href="#">My Tasks</a>
+          </li>
+            <li>
+                <a href="#">Recently Added</a>
             </li>
             <li>
-                <a href="#">Overview</a>
+                <a href="#">Recently Read</a>
             </li>
             <li>
-                <a href="#">Events</a>
+                <a href="#">Favorites</a>
             </li>
             <li class="active">
-                <a href="#">About</a>
+                <a href="#">My Publications</a>
             </li>
             <li>
-                <a href="#">Services</a>
+                <a href="#">Trash</a>
             </li>
             <li>
                 <a href="#">Contact</a>
             </li>
         </ul>
     </div>
+
 
     <div id="page-content-wrapper">
         <nav class="navbar navbar-default">
@@ -123,230 +126,24 @@
                                                 <th scope="col" class="ps-4" style="width: 50px;">
                                                     <div class="form-check font-size-16"><input type="checkbox" class="form-check-input" id="contacusercheck" /><label class="form-check-label" for="contacusercheck"></label></div>
                                                 </th>
-                                                <th scope="col">Name</th>
-                                                <th scope="col">Position</th>
-                                                <th scope="col">Email</th>
-                                                <th scope="col">Projects</th>
-                                                <th scope="col" style="width: 200px;">Action</th>
+                                                <th scope="col">AUTHORS</th>
+                                                <th scope="col">YEAR</th>
+                                                <th scope="col">TITLE</th>
+                                                <th scope="col">SOURCE</th>
+                                                <th scope="col">ADDED</th>
+                                                <th scope="col" style="width: 200px;">ACTION</th>
                                             </tr>
                                         </thead>
-                                        <tbody>
+                                        <tbody *ngFor="let paper of papers">
                                             <tr>
                                                 <th scope="row" class="ps-4">
                                                     <div class="form-check font-size-16"><input type="checkbox" class="form-check-input" id="contacusercheck1" /><label class="form-check-label" for="contacusercheck1"></label></div>
                                                 </th>
-                                                <td><img src="https://bootdey.com/img/Content/avatar/avatar1.png" alt="" class="avatar-sm rounded-circle me-2" /><a href="#" class="text-body">Simon Ryles</a></td>
-                                                <td><span class="badge badge-soft-success mb-0">Full Stack Developer</span></td>
-                                                <td>SimonRyles@minible.com</td>
-                                                <td>125</td>
-                                                <td>
-                                                    <ul class="list-inline mb-0">
-                                                        <li class="list-inline-item">
-                                                            <a href="javascript:void(0);" data-bs-toggle="tooltip" data-bs-placement="top" title="Edit" class="px-2 text-primary"><i class="bx bx-pencil font-size-18"></i></a>
-                                                        </li>
-                                                        <li class="list-inline-item">
-                                                            <a href="javascript:void(0);" data-bs-toggle="tooltip" data-bs-placement="top" title="Delete" class="px-2 text-danger"><i class="bx bx-trash-alt font-size-18"></i></a>
-                                                        </li>
-                                                        <li class="list-inline-item dropdown">
-                                                            <a class="text-muted dropdown-toggle font-size-18 px-2" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true"><i class="bx bx-dots-vertical-rounded"></i></a>
-                                                            <div class="dropdown-menu dropdown-menu-end">
-                                                                <a class="dropdown-item" href="#">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a>
-                                                            </div>
-                                                        </li>
-                                                    </ul>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row" class="ps-4">
-                                                    <div class="form-check font-size-16"><input type="checkbox" class="form-check-input" id="contacusercheck2" /><label class="form-check-label" for="contacusercheck2"></label></div>
-                                                </th>
-                                                <td><img src="https://bootdey.com/img/Content/avatar/avatar1.png" alt="" class="avatar-sm rounded-circle me-2" /><a href="#" class="text-body">Marion Walker</a></td>
-                                                <td><span class="badge badge-soft-info mb-0">Frontend Developer</span></td>
-                                                <td>MarionWalker@minible.com</td>
-                                                <td>132</td>
-                                                <td>
-                                                    <ul class="list-inline mb-0">
-                                                        <li class="list-inline-item">
-                                                            <a href="javascript:void(0);" data-bs-toggle="tooltip" data-bs-placement="top" title="Edit" class="px-2 text-primary"><i class="bx bx-pencil font-size-18"></i></a>
-                                                        </li>
-                                                        <li class="list-inline-item">
-                                                            <a href="javascript:void(0);" data-bs-toggle="tooltip" data-bs-placement="top" title="Delete" class="px-2 text-danger"><i class="bx bx-trash-alt font-size-18"></i></a>
-                                                        </li>
-                                                        <li class="list-inline-item dropdown">
-                                                            <a class="text-muted dropdown-toggle font-size-18 px-2" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true"><i class="bx bx-dots-vertical-rounded"></i></a>
-                                                            <div class="dropdown-menu dropdown-menu-end">
-                                                                <a class="dropdown-item" href="#">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a>
-                                                            </div>
-                                                        </li>
-                                                    </ul>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row" class="ps-4">
-                                                    <div class="form-check font-size-16"><input type="checkbox" class="form-check-input" id="contacusercheck3" /><label class="form-check-label" for="contacusercheck3"></label></div>
-                                                </th>
-                                                <td>
-                                                    <div class="avatar-sm d-inline-block me-2">
-                                                        <div class="avatar-title bg-soft-primary rounded-circle text-primary"><i class="mdi mdi-account-circle m-0"></i></div>
-                                                    </div>
-                                                    <a href="#" class="text-body">Frederick White</a>
-                                                </td>
-                                                <td><span class="badge badge-soft-danger mb-0">UI/UX Designer</span></td>
-                                                <td>FrederickWhite@minible.com</td>
-                                                <td>112</td>
-                                                <td>
-                                                    <ul class="list-inline mb-0">
-                                                        <li class="list-inline-item">
-                                                            <a href="javascript:void(0);" data-bs-toggle="tooltip" data-bs-placement="top" title="Edit" class="px-2 text-primary"><i class="bx bx-pencil font-size-18"></i></a>
-                                                        </li>
-                                                        <li class="list-inline-item">
-                                                            <a href="javascript:void(0);" data-bs-toggle="tooltip" data-bs-placement="top" title="Delete" class="px-2 text-danger"><i class="bx bx-trash-alt font-size-18"></i></a>
-                                                        </li>
-                                                        <li class="list-inline-item dropdown">
-                                                            <a class="text-muted dropdown-toggle font-size-18 px-2" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true"><i class="bx bx-dots-vertical-rounded"></i></a>
-                                                            <div class="dropdown-menu dropdown-menu-end">
-                                                                <a class="dropdown-item" href="#">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a>
-                                                            </div>
-                                                        </li>
-                                                    </ul>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row" class="ps-4">
-                                                    <div class="form-check font-size-16"><input type="checkbox" class="form-check-input" id="contacusercheck4" /><label class="form-check-label" for="contacusercheck4"></label></div>
-                                                </th>
-                                                <td><img src="https://bootdey.com/img/Content/avatar/avatar1.png" alt="" class="avatar-sm rounded-circle me-2" /><a href="#" class="text-body">Shanon Marvin</a></td>
-                                                <td><span class="badge badge-soft-primary mb-0">Backend Developer</span></td>
-                                                <td>ShanonMarvin@minible.com</td>
-                                                <td>121</td>
-                                                <td>
-                                                    <ul class="list-inline mb-0">
-                                                        <li class="list-inline-item">
-                                                            <a href="javascript:void(0);" data-bs-toggle="tooltip" data-bs-placement="top" title="Edit" class="px-2 text-primary"><i class="bx bx-pencil font-size-18"></i></a>
-                                                        </li>
-                                                        <li class="list-inline-item">
-                                                            <a href="javascript:void(0);" data-bs-toggle="tooltip" data-bs-placement="top" title="Delete" class="px-2 text-danger"><i class="bx bx-trash-alt font-size-18"></i></a>
-                                                        </li>
-                                                        <li class="list-inline-item dropdown">
-                                                            <a class="text-muted dropdown-toggle font-size-18 px-2" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true"><i class="bx bx-dots-vertical-rounded"></i></a>
-                                                            <div class="dropdown-menu dropdown-menu-end">
-                                                                <a class="dropdown-item" href="#">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a>
-                                                            </div>
-                                                        </li>
-                                                    </ul>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row" class="ps-4">
-                                                    <div class="form-check font-size-16"><input type="checkbox" class="form-check-input" id="contacusercheck5" /><label class="form-check-label" for="contacusercheck5"></label></div>
-                                                </th>
-                                                <td>
-                                                    <div class="avatar-sm d-inline-block me-2">
-                                                        <div class="avatar-title bg-soft-primary rounded-circle text-primary"><i class="mdi mdi-account-circle m-0"></i></div>
-                                                    </div>
-                                                    <a href="#" class="text-body">Mark Jones</a>
-                                                </td>
-                                                <td><span class="badge badge-soft-info mb-0">Frontend Developer</span></td>
-                                                <td>MarkJones@minible.com</td>
-                                                <td>145</td>
-                                                <td>
-                                                    <ul class="list-inline mb-0">
-                                                        <li class="list-inline-item">
-                                                            <a href="javascript:void(0);" data-bs-toggle="tooltip" data-bs-placement="top" title="Edit" class="px-2 text-primary"><i class="bx bx-pencil font-size-18"></i></a>
-                                                        </li>
-                                                        <li class="list-inline-item">
-                                                            <a href="javascript:void(0);" data-bs-toggle="tooltip" data-bs-placement="top" title="Delete" class="px-2 text-danger"><i class="bx bx-trash-alt font-size-18"></i></a>
-                                                        </li>
-                                                        <li class="list-inline-item dropdown">
-                                                            <a class="text-muted dropdown-toggle font-size-18 px-2" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true"><i class="bx bx-dots-vertical-rounded"></i></a>
-                                                            <div class="dropdown-menu dropdown-menu-end"><a class="dropdown-item" href="#">Edit</a><a class="dropdown-item" href="#">Action</a><a class="dropdown-item" href="#">Remove</a></div>
-                                                        </li>
-                                                    </ul>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row" class="ps-4">
-                                                    <div class="form-check font-size-16"><input type="checkbox" class="form-check-input" id="contacusercheck6" /><label class="form-check-label" for="contacusercheck6"></label></div>
-                                                </th>
-                                                <td><img src="https://bootdey.com/img/Content/avatar/avatar1.png" alt="" class="avatar-sm rounded-circle me-2" /><a href="#" class="text-body">Janice Morgan</a></td>
-                                                <td><span class="badge badge-soft-primary mb-0">Backend Developer</span></td>
-                                                <td>JaniceMorgan@minible.com</td>
-                                                <td>136</td>
-                                                <td>
-                                                    <ul class="list-inline mb-0">
-                                                        <li class="list-inline-item">
-                                                            <a href="javascript:void(0);" data-bs-toggle="tooltip" data-bs-placement="top" title="Edit" class="px-2 text-primary"><i class="bx bx-pencil font-size-18"></i></a>
-                                                        </li>
-                                                        <li class="list-inline-item">
-                                                            <a href="javascript:void(0);" data-bs-toggle="tooltip" data-bs-placement="top" title="Delete" class="px-2 text-danger"><i class="bx bx-trash-alt font-size-18"></i></a>
-                                                        </li>
-                                                        <li class="list-inline-item dropdown">
-                                                            <a class="text-muted dropdown-toggle font-size-18 px-2" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true"><i class="bx bx-dots-vertical-rounded"></i></a>
-                                                            <div class="dropdown-menu dropdown-menu-end">
-                                                                <a class="dropdown-item" href="#">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a>
-                                                            </div>
-                                                        </li>
-                                                    </ul>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row" class="ps-4">
-                                                    <div class="form-check font-size-16"><input type="checkbox" class="form-check-input" id="contacusercheck7" /><label class="form-check-label" for="contacusercheck7"></label></div>
-                                                </th>
-                                                <td><img src="https://bootdey.com/img/Content/avatar/avatar1.png" alt="" class="avatar-sm rounded-circle me-2" /><a href="#" class="text-body">Patrick Petty</a></td>
-                                                <td><span class="badge badge-soft-danger mb-0">UI/UX Designer</span></td>
-                                                <td>PatrickPetty@minible.com</td>
-                                                <td>125</td>
-                                                <td>
-                                                    <ul class="list-inline mb-0">
-                                                        <li class="list-inline-item">
-                                                            <a href="javascript:void(0);" data-bs-toggle="tooltip" data-bs-placement="top" title="Edit" class="px-2 text-primary"><i class="bx bx-pencil font-size-18"></i></a>
-                                                        </li>
-                                                        <li class="list-inline-item">
-                                                            <a href="javascript:void(0);" data-bs-toggle="tooltip" data-bs-placement="top" title="Delete" class="px-2 text-danger"><i class="bx bx-trash-alt font-size-18"></i></a>
-                                                        </li>
-                                                        <li class="list-inline-item dropdown">
-                                                            <a class="text-muted dropdown-toggle font-size-18 px-2" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true"><i class="bx bx-dots-vertical-rounded"></i></a>
-                                                            <div class="dropdown-menu dropdown-menu-end">
-                                                                <a class="dropdown-item" href="#">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a>
-                                                            </div>
-                                                        </li>
-                                                    </ul>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row" class="ps-4">
-                                                    <div class="form-check font-size-16"><input type="checkbox" class="form-check-input" id="contacusercheck8" /><label class="form-check-label" for="contacusercheck8"></label></div>
-                                                </th>
-                                                <td><img src="https://bootdey.com/img/Content/avatar/avatar1.png" alt="" class="avatar-sm rounded-circle me-2" /><a href="#" class="text-body">Marilyn Horton</a></td>
-                                                <td><span class="badge badge-soft-primary mb-0">Backend Developer</span></td>
-                                                <td>MarilynHorton@minible.com</td>
-                                                <td>154</td>
-                                                <td>
-                                                    <ul class="list-inline mb-0">
-                                                        <li class="list-inline-item">
-                                                            <a href="javascript:void(0);" data-bs-toggle="tooltip" data-bs-placement="top" title="Edit" class="px-2 text-primary"><i class="bx bx-pencil font-size-18"></i></a>
-                                                        </li>
-                                                        <li class="list-inline-item">
-                                                            <a href="javascript:void(0);" data-bs-toggle="tooltip" data-bs-placement="top" title="Delete" class="px-2 text-danger"><i class="bx bx-trash-alt font-size-18"></i></a>
-                                                        </li>
-                                                        <li class="list-inline-item dropdown">
-                                                            <a class="text-muted dropdown-toggle font-size-18 px-2" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true"><i class="bx bx-dots-vertical-rounded"></i></a>
-                                                            <div class="dropdown-menu dropdown-menu-end">
-                                                                <a class="dropdown-item" href="#">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a>
-                                                            </div>
-                                                        </li>
-                                                    </ul>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row" class="ps-4">
-                                                    <div class="form-check font-size-16"><input type="checkbox" class="form-check-input" id="contacusercheck9" /><label class="form-check-label" for="contacusercheck9"></label></div>
-                                                </th>
-                                                <td><img src="https://bootdey.com/img/Content/avatar/avatar1.png" alt="" class="avatar-sm rounded-circle me-2" /><a href="#" class="text-body">Neal Womack</a></td>
-                                                <td><span class="badge badge-soft-success mb-0">Full Stack Developer</span></td>
-                                                <td>NealWomack@minible.com</td>
-                                                <td>231</td>
+                                                <td><a href="#" class="text-body">{{paper?.authors}}</a></td>
+                                                <td><span class="badge badge-soft-success mb-0">{{paper?.year}}</span></td>
+                                                <td>{{paper?.title}}</td>
+                                                <td>{{paper?.source}}</td>
+                                                <td>{{paper?.addedDate}}</td>
                                                 <td>
                                                     <ul class="list-inline mb-0">
                                                         <li class="list-inline-item">
@@ -372,7 +169,7 @@
                     </div>
                     <div class="row g-0 align-items-center pb-4">
                         <div class="col-sm-6">
-                            <div><p class="mb-sm-0">Showing 1 to 10 of 57 entries</p></div>
+                            <div><p class="mb-sm-0">Showing 1 to 10 of {{papers.length}} entries</p></div>
                         </div>
                         <div class="col-sm-6">
                             <div class="float-sm-end">
@@ -382,9 +179,6 @@
                                     </li>
                                     <li class="page-item active"><a href="#" class="page-link">1</a></li>
                                     <li class="page-item"><a href="#" class="page-link">2</a></li>
-                                    <li class="page-item"><a href="#" class="page-link">3</a></li>
-                                    <li class="page-item"><a href="#" class="page-link">4</a></li>
-                                    <li class="page-item"><a href="#" class="page-link">5</a></li>
                                     <li class="page-item">
                                         <a href="#" class="page-link"><i class="mdi mdi-chevron-right"></i></a>
                                     </li>
